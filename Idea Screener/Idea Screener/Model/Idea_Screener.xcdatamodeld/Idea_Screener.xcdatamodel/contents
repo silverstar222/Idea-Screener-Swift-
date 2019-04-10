@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
+        <attribute name="cvv" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="card" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Device" representedClassName="Device" syncable="YES" codeGenerationType="class">
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="ageCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="educationLevel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hhIncome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homeOwnership" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lifeStage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lifeStyle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileCreatedAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="profileUpdatedAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relationshipStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stripeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usertoken" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Card" inverseName="user" inverseEntity="Card" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Card" positionX="-119" positionY="158" width="128" height="103"/>
+        <element name="Device" positionX="-119" positionY="57" width="128" height="60"/>
+        <element name="User" positionX="-324" positionY="-18" width="128" height="420"/>
+    </elements>
+</model>
